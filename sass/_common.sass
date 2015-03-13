@@ -53,23 +53,85 @@ body
 	font-size: 12px 
 	line-height: 1.4
 
-
+//vars
+=nar
+	font-family: 'Arial Narrow', Arial, sans-serif 
+=arial
+	font-family: Arial, sans-serif 
+=black
+	font-family: 'Arial Black', Arial, sans-serif
 // common blocks      
 
+h1, h4
+	+nar
+	line-height: 1.2
+	color: #292929 
+h1
+	font-size: 34px
+	+r(700)
+		font-size: 24px
+h4
+	font-size: 21px
+	+r(700)
+		font-size: 18px
+h5
+	+arial
+	line-height: 1.2
+	font-size: 16px
+	+r(700)
+		font-size: 14px
+a
+	text-decoration: none
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+.input
+	+arial
+	font-size: 16px
+	background: #fff
+	border: 2px solid #73716b
+	border-bottom-color: #f7f3ef
+	border-right-color: #f7f3ef   
+	+box
+	width: 100%
+	padding: 14px 17px 8px
+	color: #2155b5
+	+placeholder-color(#84a6d6) 
+	margin-bottom: 19px
+	+r(480)
+		font-size: 14px 
+.input-mod
+	+arial
+	font-size: 16px
+	background: #fff  
+	+box
+	width: 100%
+	padding: 14px 17px 13px
+	color: #353535
+	+placeholder-color(#adaaad) 
+	margin-bottom: 19px
+	+r(480)
+		font-size: 14px 
+	
+.btn
+	width: 100%
+	+box
+	text-align: center
+	+arial
+	font-size: 20px
+	color: #fff
+	+border-radius(3px)
+	background: #de1cad  
+	padding: 20px  
+	margin-bottom: 19px
+	position: relative
+	+r(480)
+		font-size: 16px
+	&:hover
+		background: lighten(#de1cad, 5%) 
+	&:active
+		background: darken(#de1cad, 5%) 
+		top: 1px
 
 
 
